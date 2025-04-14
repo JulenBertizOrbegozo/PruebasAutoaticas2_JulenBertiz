@@ -3,6 +3,8 @@ package org.example;
 import org.junit.jupiter.api.BeforeEach;
 import org.testng.annotations.Test;
 
+import static org.junit.Assert.*;
+
 
 class CalculadoraTest {
     Calculadora calc;
@@ -14,6 +16,8 @@ class CalculadoraTest {
 
     @Test
     void suma() {
+        int suma = calc.suma(1,2);
+        assertEquals(3, suma);
     }
 
     @Test
