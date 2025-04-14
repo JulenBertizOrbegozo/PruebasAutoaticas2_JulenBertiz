@@ -1,9 +1,16 @@
 package org.example;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.testng.annotations.Test;
 
 
 class CalculadoraTest {
+    Calculadora calc;
+
+    @BeforeEach
+    void antesDeCadaUno(){
+        calc = new Calculadora();
+    }
 
     @Test
     void suma() {
