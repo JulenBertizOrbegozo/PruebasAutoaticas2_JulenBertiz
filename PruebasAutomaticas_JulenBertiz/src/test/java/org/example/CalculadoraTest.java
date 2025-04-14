@@ -32,6 +32,13 @@ class CalculadoraTest {
 
     @Test
     void division() {
+        double division = calc.division(6, 3);
+        assertEquals(2, division);
+    }
+
+    @Test
+    void divisionPorCero(){
+        assertThrows(IllegalArgumentException.class, () -> calc.division(5, 0));
     }
 
     @Test
