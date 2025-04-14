@@ -22,6 +22,8 @@ class CalculadoraTest {
 
     @Test
     void resta() {
+        int resta = calc.resta(34,3);
+        assertEquals(31,resta);
     }
 
     @Test
