@@ -58,6 +58,17 @@ class CalculadoraTest {
     }
 
     @Test
-    void esDivisible() {
+    void esDivisible0() {
+        assertThrows(IllegalArgumentException.class, () -> calc.esDivisible(10, 0));
+    }
+
+    @Test
+    void esDivisibleTrue() {
+        assertEquals(true, calc.esDivisible(4,2));
+    }
+
+    @Test
+    void esDivisibleFalse() {
+        assertEquals(false, calc.esDivisible(7,5));
     }
 }
