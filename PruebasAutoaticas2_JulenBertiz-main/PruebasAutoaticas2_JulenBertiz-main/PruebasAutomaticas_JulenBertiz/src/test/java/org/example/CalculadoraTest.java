@@ -49,11 +49,12 @@ class CalculadoraTest {
 
     @Test
     void esPar2() {
-        assertEquals(calc.esPar(5), false);
+        assertEquals(false, calc.esPar(5));
     }
 
     @Test
     void maximo() {
+        assertEquals(23, calc.maximo(4, 23,14));
     }
 
     @Test
